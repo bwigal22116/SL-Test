@@ -73,5 +73,5 @@ function enter() {
     "Iframe",
     __uv$config.prefix + __uv$config.encodeUrl(url),
   );
-  window.location.href = "./public/go.html";
+  window.location.href = "./go.html";
 }
