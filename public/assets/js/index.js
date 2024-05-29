@@ -44,7 +44,7 @@ if (AB == "on") {
 }
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js", {
+    navigator.serviceWorker.register("./public/sw.js", {
       scope: __uv$config.prefix,
     });
   });
@@ -73,5 +73,5 @@ function enter() {
     "Iframe",
     __uv$config.prefix + __uv$config.encodeUrl(url),
   );
-  window.location.href = "./go.html";
+  window.location.href = "./public/go.html";
 }
